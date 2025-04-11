@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Taconic Culinary Order</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <img src="./Taconic High school.png" alt="Taconic High School Logo" class="logo-img">
+      <h1>Taconic High School</h1>
+    </div>
+  
+  </nav>
+
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="/submit-login" method="POST"> <!-- This action will be handled by your server -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Log In</button>
+      <p class="error-message" id="error-message"></p> <!-- Error message will be shown here -->
+    </form>
+    <p>Don't have an account? <a href="/register">Signup here</a></p>
+    </p><a href="/index.html"> Go back</a></p>
+  </div>
+</body>
+</html>
